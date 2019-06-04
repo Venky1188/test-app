@@ -1,0 +1,25 @@
+<div class="flex-container">
+  <div class="flex-item1">
+
+    <iframe width="" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+  </div>
+  <div class="flex-item2">
+    <ngx-datatable #myTable
+                   class="material"
+                   [rows]="rows"
+                   [columns]="[{name:'Name'},{name:'Gender'},{name:'Company'}]"
+                   [columnMode]="'force'"
+                   [headerHeight]="50"
+                   [loadingIndicator]="isLoading"
+                   [scrollbarV]="true"
+                   [footerHeight]="50"
+                   [rowHeight]="50"
+                   [externalPaging]="true"
+                   [count]="page.totalElements"
+                   [offset]="page.pageNumber"
+                   (page)='setPage($event)'>
+    </ngx-datatable>
+  </div>
+</div>

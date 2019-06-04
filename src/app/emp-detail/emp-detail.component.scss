@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  .ngx-datatable {
+    height: 100vh;
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  padding:1%;
+}
+
+.flex-item1 {
+  order: 1;
+  flex-basis: 100%;
+}
+.flex-item1 iframe {
+  width: 100%;
+}
+
+.flex-item2 {
+  order: 2;
+  flex-basis: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction:column;
+  }
+}
