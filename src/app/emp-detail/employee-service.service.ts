@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
-import { Employee, Page, PagedData } from './emp-detail.model';
+import { Employee } from './emp-detail.model';
+import { Page } from './page';
+import { PagedData } from './pageData';
 import { Observable } from 'rxjs';
 import { companyData } from '../assets/data/company';
 import 'rxjs/add/observable/of';

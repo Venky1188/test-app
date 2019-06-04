@@ -1,5 +1,7 @@
 import { Component, AfterViewInit, ViewChild} from '@angular/core';
-import { Employee,Page,PagedData } from './emp-detail.model';
+import { Employee } from './emp-detail.model';
+import { Page } from './page';
+import { PagedData } from './pageData';
 import { EmployeeServiceService } from './employee-service.service';
 
 import { Observable } from 'rxjs';
